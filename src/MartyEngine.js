@@ -968,7 +968,7 @@ function MartyEngine(){
 
     function minimax(depth, alpha, beta, isMaximisingPlayer) {
         var ab = EvalAlphaBeta(alpha, beta, depth);
-        return isMaximisingPlayer ? ab : -ab;
+        return isMaximisingPlayer ? ab : ab;
     }
 
     function minimaxCote(depth, isMaximisingPlayer) {
