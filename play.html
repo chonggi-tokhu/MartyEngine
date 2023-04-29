@@ -145,7 +145,7 @@ MartyBot L5
 <script>
 var board;
 var game = new Chess();
-var Marty = new MartyEngine(game, 'w');
+var Marty = new MartyEngine();
 var $board = $('#myBoard');
 var $start = $('#start');
 var $fen = $('#fen');
@@ -226,7 +226,7 @@ function getBestMove(game) {
       }
     }
   }
-  return Marty.Engine(4);
+  return Marty.AiMove();
 }
 
 function chessprogressbar() {
