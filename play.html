@@ -190,7 +190,6 @@ function MartySay(say) {
 }
 
 MartySay('Hello? I am Marty. Would you like to play with me?');
-Marty.SetColor('b');
 
 $start.click(function() {
   start_bool = 1;
@@ -199,7 +198,6 @@ $start.click(function() {
   board.orientation('white');
   $fen.html("");
   $pgn.html("");
-  Marty.SetColor(martycolor);
   if(martycolor == "b"){
     game.header('White', $wn.val());
     game.header('Black', 'MartyBot L5');
