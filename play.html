@@ -210,11 +210,13 @@ $start.click(function() {
     board.orientation('black');
     window.setTimeout(makeMove, 250);
   }
+  Marty.load(game.fen());
   updateStatus();
 });
 
 
 function getBestMove(game) {
+  Marty.load(game.fen());
   var newGameMoves = game.moves();
   var opening = checkOpeningData(game.fen());
   if(opening != false){
